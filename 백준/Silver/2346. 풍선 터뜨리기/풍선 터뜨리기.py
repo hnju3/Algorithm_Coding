@@ -3,8 +3,8 @@ from collections import deque
 input = sys.stdin.readline
 
 n = int(input())
-q = deque(enumerate(map(int, input().split())))
-ans = []
+q = deque(enumerate(map(int, input().split()))) #튜플로 묶어서 덱에 저장
+ans = [] 
 
 while q:
     idx, paper = q.popleft()
